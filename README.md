@@ -1,7 +1,7 @@
 # SunnyStalks_webapp
 
-#Dependancies#
+# Dependancies
 django 4.2
 
-#To Run#
+# To Run
 `python manage.py runserver`
