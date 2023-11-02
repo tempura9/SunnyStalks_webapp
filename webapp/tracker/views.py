@@ -9,6 +9,7 @@ def addGrocer(request):
 def editGrocer(request):
     pass
 def grocerList(request):
+    return render(request, "tracker/grocerList.html", {})
     pass
 def groceryPurchase(request):
     pass
