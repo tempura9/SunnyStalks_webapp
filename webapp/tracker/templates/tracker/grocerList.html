@@ -8,11 +8,18 @@ Grocer List
 
 {% block contentArea %}
 <div class="container d-flex">
-    <div class="w-80">
-        <img src="{% static 'images/image_placeholder.png' %}" alt="" class="img-fluid rounded-start">
-        <div>Store name</div>
-        <div>buttons</div>
-    </div>
+    {% for grocer in grocerlist %}
+        <div class="w-80">
+            <img src="{% static 'images/image_placeholder.png' %}" alt="" class="img-fluid rounded-start">
+            <div>{{grocer.name}}</div>
+            <div>
+                <button>edit</button>
+                <button>delete</button>
+            </div>
+        </div>
+        <br><br><br>
+        {% endfor %}
+        <!-- ! temporarily put this br delete when styling -->
 </div>
 
 {% endblock %}
