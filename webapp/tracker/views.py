@@ -45,6 +45,6 @@ def grocerList(request):
     })
     pass
 def groceryPurchase(request):
-    pass
+    return render(request, "tracker/addPurchase.html", {})
 def compareGrocers(request):
     pass

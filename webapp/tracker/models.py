@@ -7,6 +7,9 @@ class User(AbstractUser):
 class Branch(models.Model):
     address = models.CharField(max_length=255)
     costs = models.DecimalField(max_digits=10, decimal_places=2)
+    def getCosts():
+        # compute average from purchases
+        return;
 
 class GroceryStore(models.Model):
     name = models.CharField(max_length=255)
